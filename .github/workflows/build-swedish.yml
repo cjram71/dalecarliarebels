@@ -19,8 +19,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Preserve translation script
-        run: cp .site-build/translate.py /tmp/translate.py
+      - name: Rebuild translation script
+        run: cat .site-build/translate/part-* | base64 --decode | gzip --decompress > /tmp/translate.py
 
       - name: Copy current English website
         run: |
