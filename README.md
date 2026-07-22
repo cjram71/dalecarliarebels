@@ -1,3 +1,3 @@
 # Dalecarlia Rebels
 
-Svensk webbplats för Dalecarlia Rebels.
+Svensk webbplats för Dalecarlia Rebels AFF.

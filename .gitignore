@@ -1,0 +1,25 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Generated data, logs and caches
+*.db
+*.sqlite
+*.sqlite3
+*.log
+.cache/
+node_modules/
+dist/
+build/
+coverage/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,55 @@
+/* Official Dalecarlia Rebels image display correction.
+   Loaded site-wide by script.js so every page uses the same proportions. */
+
+.brand img {
+  width: auto !important;
+  height: 3.75rem !important;
+  max-width: 8rem !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  flex: 0 0 auto;
+}
+
+.footer-brand img {
+  width: min(15rem, 72vw) !important;
+  height: auto !important;
+  max-width: 100% !important;
+}
+
+.hero-photo {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.hero-photo > img,
+.page-team-photo {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  max-height: 44rem;
+  aspect-ratio: 960 / 732;
+  object-fit: cover !important;
+  object-position: 50% 45% !important;
+}
+
+.hero-logo-card img {
+  display: block;
+  width: min(12rem, 42vw) !important;
+  height: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 720px) {
+  .brand img {
+    height: 3.15rem !important;
+    max-width: 6.5rem !important;
+  }
+
+  .hero-photo > img,
+  .page-team-photo {
+    max-height: none;
+    object-position: 50% 42% !important;
+  }
+}
