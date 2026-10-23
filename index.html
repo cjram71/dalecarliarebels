@@ -79,6 +79,9 @@
   </script>
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     @layer base {
       html, body {
         margin: 0;
@@ -177,19 +180,18 @@
 
       <!-- Desktop Nav -->
       <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold uppercase tracking-wider text-white/90">
-        <a href="index.html" class="text-[#F59E0B] border-b-2 border-[#F59E0B] pb-1">Hem</a>
-        <a href="join.html" class="hover:text-[#F59E0B] transition-colors pb-1">Börja spela</a>
-        <a href="youth.html" class="hover:text-[#F59E0B] transition-colors pb-1">Ungdom & Föräldrar</a>
-        <a href="season.html" class="hover:text-[#F59E0B] transition-colors pb-1">Säsongen 2026</a>
-        <a href="story.html" class="hover:text-[#F59E0B] transition-colors pb-1">Historia</a>
-        <a href="partners.html" class="hover:text-[#F59E0B] transition-colors pb-1">Partners</a>
-        <a href="news.html" class="hover:text-[#F59E0B] transition-colors pb-1">Nyheter</a>
-        <a href="contact.html" class="hover:text-[#F59E0B] transition-colors pb-1">Kontakt</a>
+        <a href="#" class="text-[#F59E0B] border-b-2 border-[#F59E0B] pb-1">Hem</a>
+        <a href="#position-finder" class="hover:text-[#F59E0B] transition-colors pb-1">Positioner</a>
+        <a href="#ungdom" class="hover:text-[#F59E0B] transition-colors pb-1">Ungdom & Föräldrar</a>
+        <a href="#sasong" class="hover:text-[#F59E0B] transition-colors pb-1">Säsongen 2026</a>
+        <a href="#nyheter" class="hover:text-[#F59E0B] transition-colors pb-1">Aktuellt</a>
+        <a href="#partners" class="hover:text-[#F59E0B] transition-colors pb-1">Partners</a>
+        <a href="#anmalan" class="hover:text-[#F59E0B] transition-colors pb-1">Kontakt</a>
       </nav>
 
       <!-- Header CTAs -->
       <div class="flex items-center gap-3">
-        <a href="join.html#enquiry" class="bg-gradient-to-r from-[#C5222F] to-[#A8031E] hover:from-[#D32F2F] hover:to-[#991B1B] text-white font-display font-bold uppercase text-base sm:text-lg px-5 py-2.5 rounded-full shadow-[0_0_20px_rgba(197,34,47,0.45)] hover:shadow-[0_0_28px_rgba(197,34,47,0.7)] transition-all transform hover:-translate-y-0.5 active:translate-y-0">
+        <a href="#anmalan" class="bg-gradient-to-r from-[#C5222F] to-[#A8031E] hover:from-[#D32F2F] hover:to-[#991B1B] text-white font-display font-bold uppercase text-base sm:text-lg px-5 py-2.5 rounded-full shadow-[0_0_20px_rgba(197,34,47,0.45)] hover:shadow-[0_0_28px_rgba(197,34,47,0.7)] transition-all transform hover:-translate-y-0.5 active:translate-y-0">
           Prova en träning
         </a>
 
@@ -202,14 +204,13 @@
 
     <!-- Mobile Drawer Menu -->
     <div id="mobile-menu" class="hidden lg:hidden bg-[#0C1530] border-b border-white/10 px-6 py-6 flex-col gap-4 text-base font-bold uppercase tracking-wider">
-      <a href="index.html" class="text-[#F59E0B] py-2 border-b border-white/5">Hem</a>
-      <a href="join.html" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Börja spela</a>
-      <a href="youth.html" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Ungdom & Föräldrar</a>
-      <a href="season.html" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Säsongen 2026</a>
-      <a href="story.html" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Rebels historia</a>
-      <a href="partners.html" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Partners</a>
-      <a href="news.html" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Nyheter</a>
-      <a href="contact.html" class="text-white hover:text-[#F59E0B] py-2">Kontakt</a>
+      <a href="#" class="text-[#F59E0B] py-2 border-b border-white/5">Hem</a>
+      <a href="#position-finder" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Positioner</a>
+      <a href="#ungdom" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Ungdom & Föräldrar</a>
+      <a href="#sasong" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Säsongen 2026</a>
+      <a href="#nyheter" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Aktuellt</a>
+      <a href="#partners" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Partners</a>
+      <a href="#anmalan" class="text-white hover:text-[#F59E0B] py-2">Kontakt & Anmälan</a>
     </div>
   </header>
 
@@ -298,15 +299,15 @@
     <!-- ---------------------------------------- -->
     <!-- SECTION B: REBELS JUST NU / ROADMAP      -->
     <!-- ---------------------------------------- -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#0B1326] border-b border-white/10">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#0B1326] border-b border-white/10" id="sasong">
       <div class="max-w-6xl mx-auto">
         <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-8 gap-3">
           <div>
             <p class="font-display font-bold uppercase text-[#F59E0B] tracking-widest text-sm">Säsongen 2026</p>
             <h2 class="font-display font-black text-4xl sm:text-5xl uppercase text-white tracking-tight">Rebels just nu</h2>
           </div>
-          <a href="season.html" class="text-sm font-bold uppercase tracking-wider text-[#F59E0B] hover:underline flex items-center gap-1">
-            Se hela säsongsplanen <span class="material-symbols-outlined text-base">arrow_forward</span>
+          <a href="#anmalan" class="text-sm font-bold uppercase tracking-wider text-[#F59E0B] hover:underline flex items-center gap-1">
+            Anmäl intresse för träning <span class="material-symbols-outlined text-base">arrow_forward</span>
           </a>
         </div>
 
@@ -572,17 +573,17 @@
     </section>
 
     <!-- ---------------------------------------- -->
-    <!-- SECTION F: NEWS & PARTNER STRIP          -->
+    <!-- SECTION E: NEWS & PARTNER STRIP          -->
     <!-- ---------------------------------------- -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#0B1326] border-b border-white/10">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#0B1326] border-b border-white/10" id="nyheter">
       <div class="max-w-6xl mx-auto">
         <div class="flex items-center justify-between mb-8">
           <div>
             <p class="font-display font-bold uppercase text-[#F59E0B] tracking-widest text-sm">Aktuellt</p>
             <h2 class="font-display font-black text-4xl sm:text-5xl uppercase text-white tracking-tight">Senaste nytt</h2>
           </div>
-          <a href="news.html" class="text-sm font-bold uppercase tracking-wider text-[#F59E0B] hover:underline flex items-center gap-1">
-            Alla nyheter <span class="material-symbols-outlined text-base">arrow_forward</span>
+          <a href="#anmalan" class="text-sm font-bold uppercase tracking-wider text-[#F59E0B] hover:underline flex items-center gap-1">
+            Gå med i laget <span class="material-symbols-outlined text-base">arrow_forward</span>
           </a>
         </div>
 
@@ -600,7 +601,7 @@
                 Ett starkt lokalt partnerskap som stöttar ungdomsverksamhet och möjligheter för unga att idrotta i Falun och Borlänge.
               </p>
             </div>
-            <a href="partners.html" class="mt-6 text-sm font-bold text-[#F59E0B] hover:underline flex items-center gap-1">
+            <a href="#partners" class="mt-6 text-sm font-bold text-[#F59E0B] hover:underline flex items-center gap-1">
               Läs mer om samarbetet ↗
             </a>
           </article>
@@ -617,7 +618,7 @@
                 Fler öppna träningstider etableras nu i Falun och Borlänge under ledning av tränarteamet.
               </p>
             </div>
-            <a href="youth.html" class="mt-6 text-sm font-bold text-[#F59E0B] hover:underline flex items-center gap-1">
+            <a href="#ungdom" class="mt-6 text-sm font-bold text-[#F59E0B] hover:underline flex items-center gap-1">
               Läs mer om ungdomssatsningen ↗
             </a>
           </article>
@@ -634,15 +635,15 @@
                 Stort intresse när Rebels bjöd in nyfikna deltagare i alla åldrar att prova på kast, snabbhet och skydd utan krav på erfarenhet.
               </p>
             </div>
-            <a href="news.html" class="mt-6 text-sm font-bold text-[#F59E0B] hover:underline flex items-center gap-1">
-              Följ kommande Rookie Days ↗
+            <a href="#anmalan" class="mt-6 text-sm font-bold text-[#F59E0B] hover:underline flex items-center gap-1">
+              Anmäl dig till nästa träning ↗
             </a>
           </article>
 
         </div>
 
         <!-- Official Partner Showcase -->
-        <div class="bg-gradient-to-r from-[#131B2E] to-[#172242] border border-white/10 p-6 sm:p-8 rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div id="partners" class="bg-gradient-to-r from-[#131B2E] to-[#172242] border border-white/10 p-6 sm:p-8 rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-6">
           <div class="flex items-center gap-4">
             <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-[#F59E0B] shrink-0">
               <span class="material-symbols-outlined text-3xl">handshake</span>
@@ -657,8 +658,8 @@
             <div class="bg-white rounded-xl px-4 py-2 flex items-center justify-center">
               <img src="assets/swe3-logo.jpg" alt="SWE3 Förbundet" class="h-8 w-auto object-contain">
             </div>
-            <a href="partners.html" class="bg-white/10 hover:bg-white/20 text-white font-display font-bold uppercase text-sm px-5 py-2.5 rounded-full border border-white/20 transition-all">
-              Bli partner ↗
+            <a href="#anmalan" class="bg-white/10 hover:bg-white/20 text-white font-display font-bold uppercase text-sm px-5 py-2.5 rounded-full border border-white/20 transition-all">
+              Bli partner / Kontakt ↗
             </a>
           </div>
         </div>
@@ -782,12 +783,12 @@
         <div>
           <h4 class="font-display font-bold uppercase text-[#F59E0B] tracking-wider text-base mb-3">Snabblänkar</h4>
           <ul class="flex flex-col gap-2 text-[#94A3B8]">
-            <li><a href="join.html" class="hover:text-white transition-colors">Börja spela / Bli en Rebel</a></li>
-            <li><a href="youth.html" class="hover:text-white transition-colors">Ungdom & Föräldrar</a></li>
-            <li><a href="season.html" class="hover:text-white transition-colors">Säsongen 2026 & Schema</a></li>
-            <li><a href="story.html" class="hover:text-white transition-colors">Rebels historia</a></li>
-            <li><a href="partners.html" class="hover:text-white transition-colors">Partners & Sponsring</a></li>
-            <li><a href="news.html" class="hover:text-white transition-colors">Nyheter</a></li>
+            <li><a href="#anmalan" class="hover:text-white transition-colors">Börja spela / Anmälan</a></li>
+            <li><a href="#position-finder" class="hover:text-white transition-colors">Hitta din position</a></li>
+            <li><a href="#ungdom" class="hover:text-white transition-colors">Ungdom & Föräldrar</a></li>
+            <li><a href="#sasong" class="hover:text-white transition-colors">Säsongen 2026</a></li>
+            <li><a href="#partners" class="hover:text-white transition-colors">Partners & Sponsring</a></li>
+            <li><a href="#nyheter" class="hover:text-white transition-colors">Aktuellt & Nyheter</a></li>
           </ul>
         </div>
 
@@ -833,25 +834,25 @@
   <!-- ========================================== -->
   <nav class="lg:hidden fixed bottom-0 w-full z-50 bg-[#0C1530]/95 backdrop-blur-xl border-t border-white/10 shadow-[0_-4px_20px_rgba(0,0,0,0.6)]">
     <div class="flex justify-around items-center h-16 px-4">
-      <a href="index.html" class="flex flex-col items-center justify-center gap-1 text-[#F59E0B] font-bold">
+      <a href="#" class="flex flex-col items-center justify-center gap-1 text-[#F59E0B] font-bold">
         <span class="material-symbols-outlined text-xl">home</span>
         <span class="text-[11px] font-display uppercase tracking-wider">Hem</span>
       </a>
-      <a href="join.html" class="flex flex-col items-center justify-center gap-1 text-[#94A3B8] hover:text-white">
+      <a href="#position-finder" class="flex flex-col items-center justify-center gap-1 text-[#94A3B8] hover:text-white">
         <span class="material-symbols-outlined text-xl">sports_football</span>
-        <span class="text-[11px] font-display uppercase tracking-wider">Träna</span>
+        <span class="text-[11px] font-display uppercase tracking-wider">Positioner</span>
       </a>
-      <a href="youth.html" class="flex flex-col items-center justify-center gap-1 text-[#94A3B8] hover:text-white">
+      <a href="#ungdom" class="flex flex-col items-center justify-center gap-1 text-[#94A3B8] hover:text-white">
         <span class="material-symbols-outlined text-xl">diversity_3</span>
         <span class="text-[11px] font-display uppercase tracking-wider">Ungdom</span>
       </a>
-      <a href="season.html" class="flex flex-col items-center justify-center gap-1 text-[#94A3B8] hover:text-white">
+      <a href="#sasong" class="flex flex-col items-center justify-center gap-1 text-[#94A3B8] hover:text-white">
         <span class="material-symbols-outlined text-xl">event</span>
         <span class="text-[11px] font-display uppercase tracking-wider">Säsong</span>
       </a>
-      <a href="contact.html" class="flex flex-col items-center justify-center gap-1 text-[#94A3B8] hover:text-white">
+      <a href="#anmalan" class="flex flex-col items-center justify-center gap-1 text-[#94A3B8] hover:text-white">
         <span class="material-symbols-outlined text-xl">mail</span>
-        <span class="text-[11px] font-display uppercase tracking-wider">Kontakt</span>
+        <span class="text-[11px] font-display uppercase tracking-wider">Anmälan</span>
       </a>
     </div>
   </nav>
@@ -869,6 +870,14 @@
     mobileMenuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
       mobileMenu.classList.toggle('flex');
+    });
+
+    // Close mobile menu when any link inside is clicked
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
+      });
     });
 
     // Position Finder Interactive Logic
