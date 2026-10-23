@@ -1,72 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv" class="scroll-smooth">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Dalecarlia Rebels AFF | Amerikansk fotboll i Falun & Borlänge, Dalarna</title>
-  <meta name="description" content="Officiell webbplats för Dalecarlia Rebels AFF. Amerikansk fotboll för ungdomar, vuxna, nybörjare och återvändande spelare i Falun, Borlänge och hela Dalarna.">
-  <meta name="theme-color" content="#0c1530">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dalecarlia Rebels AFF | American Football in Falun & Borlänge, Sweden</title>
+  <meta name="description" content="Official website of Dalecarlia Rebels AFF. American football for youth, adults, beginners, and returning players in Falun, Borlänge, and Dalarna, Sweden.">
+  <meta name="theme-color" content="#060e20">
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
-  <!-- Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
-
-  <!-- Canonical and Language Alternates -->
+  <!-- Canonical & Alternate Hreflang -->
   <link rel="canonical" href="https://dalecarliarebels.se/">
   <link rel="alternate" hreflang="sv" href="https://dalecarliarebels.se/">
-  <link rel="alternate" hreflang="en" href="https://dalecarliarebels.com/">
+  <link rel="alternate" hreflang="en" href="https://dalecarliarebels.se/">
   <link rel="alternate" hreflang="x-default" href="https://dalecarliarebels.se/">
 
-  <!-- Favicon and Manifest -->
+  <!-- Favicon & Icons -->
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dalecarlia Rebels AFF">
+  <meta property="og:title" content="Dalecarlia Rebels AFF | American Football in Dalarna, Sweden">
+  <meta property="og:description" content="Every strength has a position. Experience American football with Dalecarlia Rebels in Falun and Borlänge. Beginners welcome!">
+  <meta property="og:url" content="https://dalecarliarebels.se/">
+  <meta property="og:image" content="https://dalecarliarebels.com/assets/og-image.svg">
+  <meta property="og:image:alt" content="Dalecarlia Rebels — Every strength has a position">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dalecarlia Rebels AFF | American Football in Dalarna, Sweden">
+  <meta name="twitter:description" content="Every strength has a position. Experience American football with Dalecarlia Rebels in Falun and Borlänge. Beginners welcome!">
+  <meta name="twitter:image" content="https://dalecarliarebels.com/assets/og-image.svg">
 
   <!-- Google Fonts & Material Symbols -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 
-  <!-- Open Graph / Social Meta -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Dalecarlia Rebels AFF">
-  <meta property="og:title" content="Dalecarlia Rebels AFF | Amerikansk fotboll i Dalarna">
-  <meta property="og:description" content="Varje styrka har en position. Prova amerikansk fotboll med Dalecarlia Rebels i Falun och Borlänge. Nybörjare välkomna!">
-  <meta property="og:url" content="https://dalecarliarebels.se/">
-  <meta property="og:image" content="https://dalecarliarebels.se/assets/og-image.svg">
-  <meta property="og:image:alt" content="Dalecarlia Rebels — varje styrka har en position">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Dalecarlia Rebels AFF | Amerikansk fotboll i Dalarna">
-  <meta name="twitter:description" content="Ett lag för ungdomar och vuxna i Falun, Borlänge och hela Dalarna.">
-  <meta name="twitter:image" content="https://dalecarliarebels.se/assets/og-image.svg">
-
-  <!-- Tailwind CSS Play CDN & Custom Athletic System Configuration -->
+  <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           colors: {
-            'rebels-navy': '#0C1530',
-            'rebels-navy-dark': '#060E20',
-            'rebels-navy-surface': '#0B1326',
-            'rebels-navy-card': '#131B2E',
-            'rebels-navy-high': '#171F33',
-            'rebels-navy-highest': '#222A3D',
-            'rebels-red': '#C5222F',
-            'rebels-red-hover': '#A8031E',
-            'rebels-gold': '#F59E0B',
-            'rebels-gold-light': '#FEF3C7',
-            'surface': '#0B1326',
-            'surface-container': '#131B2E',
-            'surface-container-high': '#171F33',
-            'surface-container-highest': '#222A3D',
-            'surface-container-lowest': '#060E20',
-            'on-surface': '#DAE2FD',
-            'on-surface-variant': '#94A3B8',
-            'secondary-container': '#C5222F',
-            'tertiary': '#F59E0B',
-            'tertiary-container': '#3E2400',
+            rebels: {
+              navy: '#213567',
+              red: '#C5222F',
+              gold: '#F59E0B',
+              dark: '#060E20',
+              surface: '#0B1326',
+              card: '#131B2E',
+            }
           },
           fontFamily: {
             display: ['"Barlow Condensed"', 'sans-serif'],
@@ -117,7 +103,7 @@
         "sport": "Amerikansk fotboll",
         "areaServed": {
           "@type": "AdministrativeArea",
-          "name": "Dalarna, Falun, Borlänge, Sverige"
+          "name": "Dalarna, Falun, Borlänge, Sweden"
         },
         "sameAs": [
           "https://www.facebook.com/DalecarliaRebelsAff/",
@@ -130,46 +116,45 @@
       },
       {
         "@type": "WebSite",
-        "@id": "https://dalecarliarebels.se/#website",
+        "@id": "https://dalecarliarebels.com/#website",
         "url": "https://dalecarliarebels.se/",
         "name": "Dalecarlia Rebels",
-        "inLanguage": "sv",
+        "inLanguage": "en",
         "publisher": { "@id": "https://dalecarliarebels.se/#club" }
       }
     ]
   }
   </script>
 </head>
-
-<body class="bg-[#060E20] text-[#DAE2FD] min-h-screen flex flex-col selection:bg-[#C5222F] selection:text-white">
+<body class="min-h-screen flex flex-col bg-[#060E20] text-[#DAE2FD] antialiased selection:bg-[#C5222F] selection:text-white">
 
   <!-- ========================================== -->
-  <!-- 1. TOP UTILITY BAR                         -->
+  <!-- 1. TOP UTILITY BAR (Bilingual Switcher)    -->
   <!-- ========================================== -->
-  <div class="bg-[#030814] border-b border-white/10 text-xs py-1.5 px-4 text-center z-50">
-    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 text-[#94A3B8]">
-      <span class="text-white font-medium flex items-center gap-1.5">
-        <span>🏈</span> Amerikansk fotboll i Falun & Borlänge · Nybörjare & alla åldrar välkomna
-      </span>
-      <div class="flex items-center gap-3 font-semibold">
-        <span class="text-[#F59E0B]">🇸🇪 dalecarliarebels.se</span>
-        <span class="opacity-40">|</span>
-        <a href="https://dalecarliarebels.com/" hreflang="en" lang="en" class="text-white hover:text-[#F59E0B] flex items-center gap-1 transition-colors">
-          🌐 English (dalecarliarebels.com) ↗
+  <div class="bg-[#0B1326] border-b border-white/10 text-xs py-2 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2 text-[#94A3B8]">
+        <span class="inline-block w-2 h-2 rounded-full bg-[#10B981] animate-pulse"></span>
+        <span>American football in Dalarna · Beginners & international players welcome</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://dalecarliarebels.se/" hreflang="sv" lang="sv" class="text-[#F59E0B] hover:underline font-bold flex items-center gap-1 transition-colors">
+          <span>Svenska (dalecarliarebels.se)</span>
+          <span class="material-symbols-outlined text-xs">north_east</span>
         </a>
       </div>
     </div>
   </div>
 
   <!-- ========================================== -->
-  <!-- 2. STICKY HEADER & NAVIGATION             -->
+  <!-- 2. PRIMARY STICKY NAVIGATION BAR          -->
   <!-- ========================================== -->
-  <header class="sticky top-0 w-full z-40 bg-[#0C1530]/95 backdrop-blur-xl border-b border-white/10 shadow-[0_4px_24px_rgba(0,0,0,0.45)]">
-    <div class="max-w-6xl mx-auto h-20 px-4 sm:px-6 flex items-center justify-between gap-4">
+  <header class="sticky top-0 z-50 bg-[#060E20]/90 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
       
-      <!-- Brand Logo -->
+      <!-- Brand Identity -->
       <a href="index.html" class="flex items-center gap-3 group">
-        <div class="bg-white rounded-xl p-1.5 shadow-md flex items-center justify-center transition-transform group-hover:scale-105">
+        <div class="h-12 w-12 rounded-xl bg-[#213567] border border-[#F59E0B]/40 flex items-center justify-center p-1.5 shadow-[0_0_15px_rgba(245,158,11,0.2)] group-hover:scale-105 transition-transform">
           <img src="assets/rebels-logo-small.webp" alt="Dalecarlia Rebels Logotyp" class="h-10 w-auto object-contain">
         </div>
         <div class="flex flex-col">
@@ -181,22 +166,22 @@
       <!-- Desktop Nav -->
       <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold uppercase tracking-wider text-white/90">
         <a href="#" class="text-[#F59E0B] border-b-2 border-[#F59E0B] pb-1">Hem</a>
-        <a href="#position-finder" class="hover:text-[#F59E0B] transition-colors pb-1">Positioner</a>
-        <a href="#ungdom" class="hover:text-[#F59E0B] transition-colors pb-1">Ungdom & Föräldrar</a>
-        <a href="#sasong" class="hover:text-[#F59E0B] transition-colors pb-1">Säsongen 2026</a>
-        <a href="#nyheter" class="hover:text-[#F59E0B] transition-colors pb-1">Aktuellt</a>
+        <a href="#positions" class="hover:text-[#F59E0B] transition-colors pb-1">Positioner</a>
+        <a href="#youth" class="hover:text-[#F59E0B] transition-colors pb-1">Ungdom & Föräldrar</a>
+        <a href="#season" class="hover:text-[#F59E0B] transition-colors pb-1">Säsongen 2026</a>
+        <a href="#updates" class="hover:text-[#F59E0B] transition-colors pb-1">Aktuellt</a>
         <a href="#partners" class="hover:text-[#F59E0B] transition-colors pb-1">Partners</a>
-        <a href="#anmalan" class="hover:text-[#F59E0B] transition-colors pb-1">Kontakt</a>
+        <a href="#contact" class="hover:text-[#F59E0B] transition-colors pb-1">Kontakt</a>
       </nav>
 
       <!-- Header CTAs -->
       <div class="flex items-center gap-3">
-        <a href="#anmalan" class="bg-gradient-to-r from-[#C5222F] to-[#A8031E] hover:from-[#D32F2F] hover:to-[#991B1B] text-white font-display font-bold uppercase text-base sm:text-lg px-5 py-2.5 rounded-full shadow-[0_0_20px_rgba(197,34,47,0.45)] hover:shadow-[0_0_28px_rgba(197,34,47,0.7)] transition-all transform hover:-translate-y-0.5 active:translate-y-0">
-          Prova en träning
+        <a href="#contact" class="bg-gradient-to-r from-[#C5222F] to-[#A8031E] hover:from-[#D32F2F] hover:to-[#991B1B] text-white font-display font-bold uppercase text-base sm:text-lg px-5 py-2.5 rounded-full shadow-[0_0_20px_rgba(197,34,47,0.45)] hover:shadow-[0_0_28px_rgba(197,34,47,0.7)] transition-all transform hover:-translate-y-0.5 active:translate-y-0">
+          Try a Practice
         </a>
 
         <!-- Mobile Menu Toggle Button -->
-        <button id="mobile-menu-btn" type="button" aria-label="Öppna meny" class="lg:hidden w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 text-white hover:bg-white/20 transition-colors">
+        <button id="mobile-menu-btn" type="button" aria-label="Open menu" class="lg:hidden w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 text-white hover:bg-white/20 transition-colors">
           <span class="material-symbols-outlined text-2xl">menu</span>
         </button>
       </div>
@@ -205,12 +190,12 @@
     <!-- Mobile Drawer Menu -->
     <div id="mobile-menu" class="hidden lg:hidden bg-[#0C1530] border-b border-white/10 px-6 py-6 flex-col gap-4 text-base font-bold uppercase tracking-wider">
       <a href="#" class="text-[#F59E0B] py-2 border-b border-white/5">Hem</a>
-      <a href="#position-finder" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Positioner</a>
-      <a href="#ungdom" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Ungdom & Föräldrar</a>
-      <a href="#sasong" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Säsongen 2026</a>
-      <a href="#nyheter" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Aktuellt</a>
+      <a href="#positions" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Positioner</a>
+      <a href="#youth" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Ungdom & Föräldrar</a>
+      <a href="#season" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Säsongen 2026</a>
+      <a href="#updates" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Aktuellt</a>
       <a href="#partners" class="text-white hover:text-[#F59E0B] py-2 border-b border-white/5">Partners</a>
-      <a href="#anmalan" class="text-white hover:text-[#F59E0B] py-2">Kontakt & Anmälan</a>
+      <a href="#contact" class="text-white hover:text-[#F59E0B] py-2">Contact & Sign Up</a>
     </div>
   </header>
 
@@ -220,75 +205,84 @@
   <main class="flex-1 w-full pb-20">
 
     <!-- ---------------------------------------- -->
-    <!-- SECTION A: HERO                          -->
+    <!-- SECTION A: HERO STITCH DESIGN            -->
     <!-- ---------------------------------------- -->
-    <section class="relative overflow-hidden pt-12 pb-16 px-4 sm:px-6 lg:px-8 border-b border-white/10">
-      <!-- Background Ambient Glow -->
-      <div class="absolute top-1/4 -right-20 w-96 h-96 bg-[#C5222F]/15 rounded-full blur-3xl pointer-events-none"></div>
-      <div class="absolute bottom-10 -left-20 w-96 h-96 bg-[#1E3466]/40 rounded-full blur-3xl pointer-events-none"></div>
-
-      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+    <section class="relative pt-12 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden border-b border-white/10">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#172242] via-[#060E20] to-[#060E20] -z-10"></div>
+      
+      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Left Hero Copy -->
-        <div class="lg:col-span-7 flex flex-col items-start z-10">
-          <div class="inline-flex items-center gap-2 bg-white/10 border border-white/10 px-3.5 py-1.5 rounded-full mb-4">
-            <span class="text-[#F59E0B] material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-            <span class="font-display font-bold uppercase tracking-wider text-xs sm:text-sm text-[#F59E0B]">Dalecarlia Rebels AFF · Dalarna</span>
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 flex flex-col items-start text-left">
+          
+          <!-- Badges -->
+          <div class="flex flex-wrap items-center gap-2 mb-6">
+            <span class="inline-flex items-center gap-1.5 bg-[#213567] text-[#F59E0B] px-3.5 py-1.5 rounded-full text-xs font-display font-bold uppercase tracking-wider border border-[#F59E0B]/30 shadow-sm">
+              <span class="material-symbols-outlined text-sm">shield</span> Dalecarlia Rebels AFF · Dalarna
+            </span>
+            <span class="inline-flex items-center gap-1 bg-white/10 text-white/90 px-3 py-1.5 rounded-full text-xs font-semibold">
+              <span class="material-symbols-outlined text-xs text-[#F59E0B]">verified</span> Medlem i SWE3
+            </span>
           </div>
 
-          <h1 class="font-display font-black text-5xl sm:text-6xl md:text-7xl uppercase tracking-tight text-white leading-[0.92] mb-4">
-            Varje styrka<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-[#94A3B8]">har en position.</span>
+          <!-- Headline -->
+          <h1 class="font-display font-black text-5xl sm:text-6xl md:text-7xl uppercase text-white tracking-tight leading-[0.95] mb-6">
+            VARJE STYRKA<br>
+            <span class="text-[#F59E0B]">HAR EN POSITION.</span><br>
+            <span class="text-white">BLI EN REBEL.</span>
           </h1>
 
-          <p class="text-lg sm:text-xl text-[#94A3B8] leading-relaxed mb-8 max-w-xl">
-            Ett lag för ungdomar, vuxna, nybörjare och återvändande spelare i Falun, Borlänge och hela Dalarna. Kom som du är – vi lär dig spelet!
+          <!-- Lede -->
+          <p class="text-lg sm:text-xl text-[#94A3B8] leading-relaxed mb-8 max-w-2xl font-normal">
+            No matter your athletic background, body type, or experience level — there is a role built for your strengths in American football. Join Dalecarlia Rebels in Falun and Borlänge.
           </p>
 
           <!-- CTAs -->
-          <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mb-8">
-            <a href="#anmalan" class="bg-gradient-to-r from-[#C5222F] to-[#A8031E] hover:from-[#D32F2F] hover:to-[#991B1B] text-white font-display font-bold uppercase text-lg px-8 py-4 rounded-full shadow-[0_0_24px_rgba(197,34,47,0.55)] flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5">
-              <span>Kom på din första träning</span>
+          <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mb-10">
+            <a href="#contact" class="bg-gradient-to-r from-[#C5222F] to-[#A8031E] hover:from-[#D32F2F] hover:to-[#991B1B] text-white font-display font-bold uppercase text-lg px-8 py-4 rounded-full shadow-[0_0_24px_rgba(197,34,47,0.55)] flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5">
+              <span>Anmäl dig till Rookie-träning</span>
               <span class="material-symbols-outlined text-xl">arrow_forward</span>
             </a>
-            <a href="#position-finder" class="bg-white/10 hover:bg-white/15 text-white font-display font-bold uppercase text-lg px-8 py-4 rounded-full border border-white/20 flex items-center justify-center gap-2 transition-all">
-              <span class="material-symbols-outlined text-xl text-[#F59E0B]">search</span>
+            <a href="#positions" class="bg-white/10 hover:bg-white/15 text-white font-display font-bold uppercase text-lg px-8 py-4 rounded-full border border-white/20 flex items-center justify-center gap-2 transition-all">
               <span>Hitta din position</span>
+              <span class="material-symbols-outlined text-xl">search</span>
             </a>
           </div>
 
-          <!-- Trust Badges Strip -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 w-full">
-            <div class="flex items-center gap-2 bg-[#131B2E] border border-white/5 px-3 py-2.5 rounded-xl">
-              <span class="material-symbols-outlined text-[#F59E0B] text-lg">shield</span>
-              <span class="text-xs font-bold text-white uppercase tracking-wider">SWE3 Medlem</span>
+          <!-- Highlights Strip -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 w-full text-xs sm:text-sm text-[#94A3B8]">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[#F59E0B]">sports_football</span>
+              <span>Nybörjare välkomna</span>
             </div>
-            <div class="flex items-center gap-2 bg-[#131B2E] border border-white/5 px-3 py-2.5 rounded-xl">
-              <span class="material-symbols-outlined text-[#C5222F] text-lg">location_on</span>
-              <span class="text-xs font-bold text-white uppercase tracking-wider">Falun & Borlänge</span>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[#F59E0B]">health_and_safety</span>
+              <span>Låneutrustning ingår</span>
             </div>
-            <div class="flex items-center gap-2 bg-[#131B2E] border border-white/5 px-3 py-2.5 rounded-xl">
-              <span class="material-symbols-outlined text-[#F59E0B] text-lg">sports_football</span>
-              <span class="text-xs font-bold text-white uppercase tracking-wider">Låneutrustning</span>
-            </div>
-            <div class="flex items-center gap-2 bg-[#131B2E] border border-white/5 px-3 py-2.5 rounded-xl">
-              <span class="material-symbols-outlined text-[#C5222F] text-lg">military_tech</span>
-              <span class="text-xs font-bold text-white uppercase tracking-wider">Alla nivåer</span>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[#F59E0B]">location_on</span>
+              <span>Falun & Borlänge</span>
             </div>
           </div>
+
         </div>
 
         <!-- Right Hero Visual -->
-        <div class="lg:col-span-5 relative z-10">
-          <div class="relative w-full aspect-[4/3] rounded-3xl overflow-hidden border border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.6)] bg-[#0C1530]">
-            <img src="assets/rebels-game-small.webp" alt="Dalecarlia Rebels i matchspel" class="w-full h-full object-cover object-center">
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none rounded-3xl overflow-hidden border-2 border-white/15 shadow-[0_20px_50px_rgba(0,0,0,0.8)] aspect-[4/5] bg-[#0C1530]">
+            <img src="assets/rebels-game-small.webp" alt="Dalecarlia Rebels matchspel i amerikansk fotboll" class="w-full h-full object-cover object-center">
             <div class="absolute inset-0 bg-gradient-to-t from-[#060E20] via-transparent to-transparent"></div>
             
-            <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between">
-              <div class="inline-flex items-center gap-2 bg-[#060E20]/90 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/10">
-                <span class="w-2.5 h-2.5 rounded-full bg-[#C5222F] animate-pulse"></span>
-                <span class="font-display font-bold uppercase text-xs text-white tracking-wider">Kvarnsvedens IP · Dalarna</span>
-              </div>
-              <span class="text-xs font-mono font-bold text-[#F59E0B]">#VIÄRREBELS</span>
+            <div class="absolute bottom-6 left-6 right-6">
+              <span class="bg-[#C5222F] text-white font-display font-bold uppercase text-xs px-3 py-1 rounded-full mb-2 inline-block">
+                SWE3 Seriespel
+              </span>
+              <h3 class="font-display font-black text-2xl sm:text-3xl uppercase text-white tracking-tight">
+                Tillsammans i Dalarna
+              </h3>
+              <p class="text-xs sm:text-sm text-[#DAE2FD]/80">
+                Vi bygger idrottsgemenskap, kraft och laganda i Mellansverige.
+              </p>
             </div>
           </div>
         </div>
@@ -297,16 +291,16 @@
     </section>
 
     <!-- ---------------------------------------- -->
-    <!-- SECTION B: REBELS JUST NU / ROADMAP      -->
+    <!-- SECTION B: REBELS RIGHT NOW / ROADMAP    -->
     <!-- ---------------------------------------- -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#0B1326] border-b border-white/10" id="sasong">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#0B1326] border-b border-white/10" id="season">
       <div class="max-w-6xl mx-auto">
         <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-8 gap-3">
           <div>
             <p class="font-display font-bold uppercase text-[#F59E0B] tracking-widest text-sm">Säsongen 2026</p>
             <h2 class="font-display font-black text-4xl sm:text-5xl uppercase text-white tracking-tight">Rebels just nu</h2>
           </div>
-          <a href="#anmalan" class="text-sm font-bold uppercase tracking-wider text-[#F59E0B] hover:underline flex items-center gap-1">
+          <a href="#contact" class="text-sm font-bold uppercase tracking-wider text-[#F59E0B] hover:underline flex items-center gap-1">
             Anmäl intresse för träning <span class="material-symbols-outlined text-base">arrow_forward</span>
           </a>
         </div>
@@ -317,62 +311,59 @@
           <div class="bg-[#131B2E] border border-white/10 p-6 rounded-3xl flex flex-col justify-between hover:border-white/20 transition-all hover:-translate-y-1 shadow-lg">
             <div>
               <div class="flex items-center justify-between mb-3">
-                <span class="bg-white/10 text-[#F59E0B] font-display font-bold uppercase text-xs px-3 py-1 rounded-md">24–26 Juli</span>
+                <span class="bg-white/10 text-[#F59E0B] font-display font-bold uppercase text-xs px-3 py-1 rounded-md">July 24–26</span>
                 <span class="text-xs text-[#94A3B8] flex items-center gap-1 font-semibold">
                   <span class="material-symbols-outlined text-sm">place</span> Falun / Borlänge
                 </span>
               </div>
               <h3 class="font-display font-black text-2xl text-white uppercase mb-2">Rebels Summer Camp</h3>
               <p class="text-sm text-[#94A3B8] leading-relaxed">
-                Intensivt träningsläger med fokus på grundteknik, positionsspecifik drill och lagbygge inför hösten. Låneutrustning på plats.
+                Intensive training camp focusing on football fundamentals, position-specific drills, and team building. Rental pads and helmets available on site.
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-[#94A3B8]">
-              <span>Alla åldrar & rookies</span>
-              <span class="text-white font-bold">Gratis deltagande</span>
+              <span>All ages & rookies welcome</span>
+              <span class="text-[#F59E0B] font-bold">Registration open</span>
             </div>
           </div>
 
-          <!-- Card 2: Featured Dukes Tourney -->
-          <div class="relative bg-gradient-to-br from-[#172242] to-[#131B2E] border-2 border-[#C5222F] p-6 rounded-3xl flex flex-col justify-between shadow-[0_10px_35px_rgba(197,34,47,0.35)] hover:-translate-y-1 transition-all overflow-hidden">
-            <div class="absolute -top-10 -right-10 w-32 h-32 bg-[#C5222F]/30 rounded-full blur-2xl pointer-events-none"></div>
-            
-            <div class="relative z-10">
-              <div class="flex items-center justify-between mb-3">
-                <span class="bg-[#C5222F] text-white font-display font-bold uppercase text-xs px-3 py-1 rounded-md shadow-sm">31 Juli – 2 Aug</span>
-                <span class="bg-[#3E2400] text-[#F59E0B] font-display font-bold uppercase text-xs px-3 py-1 rounded-full flex items-center gap-1">
-                  <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">military_tech</span> Säsongens Höjdpunkt
-                </span>
-              </div>
-              <h3 class="font-display font-black text-2xl text-white uppercase mb-2">Dukes Tourney 2026</h3>
-              <p class="text-sm text-[#DAE2FD] leading-relaxed">
-                Sveriges största ungdomsturnering på Lillegårdens IP i Skövde. Rebels deltar med full trupp, spelsug och maximal gemenskap!
-              </p>
-            </div>
-
-            <div class="mt-6 pt-4 border-t border-white/10 flex items-center gap-2 text-[#F59E0B] text-xs font-semibold relative z-10">
-              <span class="material-symbols-outlined text-sm">groups</span>
-              <span>Truppen förbereds nu · Resa & gemensamt boende</span>
-            </div>
-          </div>
-
-          <!-- Card 3: Höstmatcher -->
+          <!-- Card 2: Dukes Tourney -->
           <div class="bg-[#131B2E] border border-white/10 p-6 rounded-3xl flex flex-col justify-between hover:border-white/20 transition-all hover:-translate-y-1 shadow-lg">
             <div>
               <div class="flex items-center justify-between mb-3">
-                <span class="bg-white/10 text-white font-display font-bold uppercase text-xs px-3 py-1 rounded-md">Höst 2026</span>
+                <span class="bg-white/10 text-white font-display font-bold uppercase text-xs px-3 py-1 rounded-md">July 31 – Aug 2</span>
                 <span class="text-xs text-[#94A3B8] flex items-center gap-1 font-semibold">
-                  <span class="material-symbols-outlined text-sm">stadium</span> SWE3 Seriespel
+                  <span class="material-symbols-outlined text-sm">place</span> Skövde
                 </span>
               </div>
-              <h3 class="font-display font-black text-2xl text-white uppercase mb-2">Matcher & Seriespel</h3>
+              <h3 class="font-display font-black text-2xl text-white uppercase mb-2">Dukes Tourney 2026</h3>
               <p class="text-sm text-[#94A3B8] leading-relaxed">
-                Rebels laddar för seriematcher och regionala träningsutmaningar under ledning av Head Coach CJ Rahmings och tränarteamet.
+                Sweden's premier youth American football tournament. Rebels join forces to compete, gain tournament experience, and build lasting friendships.
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-[#94A3B8]">
-              <span>Kvarnsvedens IP & borta</span>
-              <span class="text-white font-bold">Publik välkommen</span>
+              <span>Youth & U18 Tournament</span>
+              <span class="text-white font-bold">Summer Highlight</span>
+            </div>
+          </div>
+
+          <!-- Card 3: League Play -->
+          <div class="bg-[#131B2E] border border-white/10 p-6 rounded-3xl flex flex-col justify-between hover:border-white/20 transition-all hover:-translate-y-1 shadow-lg">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="bg-white/10 text-white font-display font-bold uppercase text-xs px-3 py-1 rounded-md">Autumn 2026</span>
+                <span class="text-xs text-[#94A3B8] flex items-center gap-1 font-semibold">
+                  <span class="material-symbols-outlined text-sm">stadium</span> SWE3 League
+                </span>
+              </div>
+              <h3 class="font-display font-black text-2xl text-white uppercase mb-2">Games & Scrimmages</h3>
+              <p class="text-sm text-[#94A3B8] leading-relaxed">
+                Rebels gear up for league matches and regional challenges under dedicated coaches and leadership.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-[#94A3B8]">
+              <span>Kvarnsvedens IP & away</span>
+              <span class="text-white font-bold">Spectators welcome</span>
             </div>
           </div>
 
@@ -383,84 +374,66 @@
     <!-- ---------------------------------------- -->
     <!-- SECTION C: INTERACTIVE POSITION FINDER   -->
     <!-- ---------------------------------------- -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 border-b border-white/10" id="position-finder">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 border-b border-white/10" id="positions">
       <div class="max-w-6xl mx-auto">
-        <div class="max-w-2xl mb-8">
+        <div class="text-center max-w-2xl mx-auto mb-10">
           <p class="font-display font-bold uppercase text-[#F59E0B] tracking-widest text-sm">Position Finder</p>
-          <h2 class="font-display font-black text-4xl sm:text-5xl uppercase text-white tracking-tight">Vilken är din styrka?</h2>
-          <p class="text-[#94A3B8] mt-2 text-base">
-            I amerikansk fotboll behövs alla kroppstyper och personligheter. Snabbhet har en roll. Styrka har en roll. Strategi har en roll. Välj vad som passar dig bäst!
+          <h2 class="font-display font-black text-4xl sm:text-5xl uppercase text-white tracking-tight mb-3">
+            Vilken är din styrka?
+          </h2>
+          <p class="text-[#94A3B8] text-base leading-relaxed">
+            I amerikansk fotboll finns en roll för varje kroppstyp och personlighet. Klicka på din främsta egenskap nedan och se var du passar bäst på planen.
           </p>
         </div>
 
-        <!-- Filter Selector Buttons -->
-        <div class="flex flex-wrap gap-2.5 mb-6" id="trait-pill-container">
-          <button type="button" data-role="speed" class="role-pill active-role px-4 py-2.5 rounded-full font-display font-bold uppercase text-sm sm:text-base flex items-center gap-2 transition-all bg-[#C5222F] text-white shadow-lg">
-            <span>⚡</span> Snabb & rörlig
+        <!-- Trait Selector Pills -->
+        <div class="flex flex-wrap items-center justify-center gap-2.5 mb-10 max-w-3xl mx-auto" id="trait-pill-container">
+          <button type="button" data-role="speed" class="role-pill active bg-[#C5222F] text-white font-display font-bold uppercase text-sm sm:text-base px-5 py-2.5 rounded-full border border-[#C5222F] shadow-md transition-all">
+            ⚡ Snabbhet & smidighet
           </button>
-          <button type="button" data-role="strength" class="role-pill px-4 py-2.5 rounded-full font-display font-bold uppercase text-sm sm:text-base flex items-center gap-2 transition-all bg-[#171F33] text-[#DAE2FD] hover:bg-[#222A3D]">
-            <span>🛡️</span> Stark & pålitlig
+          <button type="button" data-role="strength" class="role-pill bg-white/5 hover:bg-white/10 text-white font-display font-bold uppercase text-sm sm:text-base px-5 py-2.5 rounded-full border border-white/15 transition-all">
+            🛡️ Styrka & tyngd
           </button>
-          <button type="button" data-role="brain" class="role-pill px-4 py-2.5 rounded-full font-display font-bold uppercase text-sm sm:text-base flex items-center gap-2 transition-all bg-[#171F33] text-[#DAE2FD] hover:bg-[#222A3D]">
-            <span>🧠</span> Strategisk & lugn
+          <button type="button" data-role="brain" class="role-pill bg-white/5 hover:bg-white/10 text-white font-display font-bold uppercase text-sm sm:text-base px-5 py-2.5 rounded-full border border-white/15 transition-all">
+            🧠 Spelförståelse & strategi
           </button>
-          <button type="button" data-role="aim" class="role-pill px-4 py-2.5 rounded-full font-display font-bold uppercase text-sm sm:text-base flex items-center gap-2 transition-all bg-[#171F33] text-[#DAE2FD] hover:bg-[#222A3D]">
-            <span>🎯</span> Träffsäker
+          <button type="button" data-role="power" class="role-pill bg-white/5 hover:bg-white/10 text-white font-display font-bold uppercase text-sm sm:text-base px-5 py-2.5 rounded-full border border-white/15 transition-all">
+            💥 Tuffhet & vilja
           </button>
-          <button type="button" data-role="grit" class="role-pill px-4 py-2.5 rounded-full font-display font-bold uppercase text-sm sm:text-base flex items-center gap-2 transition-all bg-[#171F33] text-[#DAE2FD] hover:bg-[#222A3D]">
-            <span>💥</span> Målmedveten
+          <button type="button" data-role="precision" class="role-pill bg-white/5 hover:bg-white/10 text-white font-display font-bold uppercase text-sm sm:text-base px-5 py-2.5 rounded-full border border-white/15 transition-all">
+            🎯 Precision & fotarbete
+          </button>
+          <button type="button" data-role="hands" class="role-pill bg-white/5 hover:bg-white/10 text-white font-display font-bold uppercase text-sm sm:text-base px-5 py-2.5 rounded-full border border-white/15 transition-all">
+            🙌 Instinkt & fångstsäkerhet
           </button>
         </div>
 
-        <!-- Dynamic Position Display Card -->
-        <div id="position-card" class="bg-gradient-to-br from-[#1E3466] to-[#0F1D3D] border border-white/20 p-6 sm:p-8 rounded-3xl shadow-[0_12px_40px_rgba(0,0,0,0.5)]">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
-            <span id="role-badge" class="bg-[#C5222F]/40 text-[#FFA4AD] font-display font-bold uppercase text-xs px-3.5 py-1 rounded-full self-start">
-              Anfall & Försvar
+        <!-- Dynamic Position Result Card -->
+        <div id="position-card" class="bg-gradient-to-br from-[#131B2E] via-[#172242] to-[#131B2E] border-2 border-white/15 p-8 sm:p-10 rounded-3xl max-w-3xl mx-auto shadow-2xl relative overflow-hidden transition-all duration-300">
+          <div class="flex items-center gap-3 mb-4">
+            <span id="role-badge" class="bg-[#F59E0B] text-black font-display font-black uppercase text-xs px-3 py-1 rounded-md">
+              Offense & Defense
             </span>
-            <span class="text-xs text-[#F59E0B] font-semibold flex items-center gap-1">
-              <span class="material-symbols-outlined text-sm">verified</span> Nybörjarvänligt · Tränarna guidar dig
-            </span>
+            <span class="text-xs text-[#94A3B8] uppercase tracking-wider font-semibold">Rekommenderad position</span>
           </div>
 
-          <h3 id="role-title" class="font-display font-black text-3xl sm:text-4xl text-white uppercase mb-3">
+          <h3 id="role-title" class="font-display font-black text-3xl sm:text-4xl text-white uppercase tracking-tight mb-4">
             Wide Receiver & Defensive Back
           </h3>
 
-          <p id="role-desc" class="text-base sm:text-lg text-[#DAE2FD] leading-relaxed mb-6">
-            Älskar du sprint, reflexer och luftdueller? Som Wide Receiver fångar du matchvinnande passningar. Som Defensive Back jagar du interceptions och stänger ner motståndarnas snabbaste löpare.
+          <p id="role-desc" class="text-base sm:text-lg text-[#DAE2FD] leading-relaxed mb-6 font-normal">
+            Älskar du sprint, snabba riktningsförändringar och luftdueller? Som Wide Receiver fångar du matchvinnande touchdown-passningar. Som Defensive Back punktmarkerar du motståndarnas stjärnor och jagar interceptions.
           </p>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            <div class="bg-[#0B1326]/60 p-4 rounded-2xl border border-white/5">
-              <p class="text-xs uppercase font-bold tracking-wider text-[#94A3B8]">Nyckelegenskap</p>
-              <p id="role-trait" class="font-display font-black text-xl text-white uppercase mt-0.5">Snabbhet & tajming</p>
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-6 border-t border-white/10">
+            <div class="flex items-center gap-2 text-sm text-[#F59E0B] font-semibold">
+              <span class="material-symbols-outlined text-base">check_circle</span>
+              <span id="role-trait">Snabbhet & tajming</span>
             </div>
-            <div class="bg-[#0B1326]/60 p-4 rounded-2xl border border-white/5">
-              <p class="text-xs uppercase font-bold tracking-wider text-[#94A3B8]">Utrustning till första träningen</p>
-              <p class="font-display font-black text-xl text-[#F59E0B] uppercase mt-0.5">Finns att låna gratis</p>
-            </div>
+            <a href="#contact" class="w-full sm:w-auto bg-[#C5222F] hover:bg-[#A8031E] text-white font-display font-bold uppercase text-sm px-5 py-2.5 rounded-full text-center transition-colors">
+              Prova denna position här
+            </a>
           </div>
-
-          <div class="bg-white/10 p-4 rounded-2xl flex items-center gap-3">
-            <span class="material-symbols-outlined text-[#F59E0B] text-2xl">sports_score</span>
-            <p class="text-sm text-white">
-              <strong>Ingen förkunskap krävs:</strong> Våra tränare lär dig fotarbete, bollmottagning och speluppfattning från grunden.
-            </p>
-          </div>
-        </div>
-
-        <div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 bg-[#131B2E] p-4 sm:p-5 rounded-2xl border border-white/5">
-          <div class="flex items-center gap-3">
-            <img src="assets/position-wheel.svg" alt="Diagram" class="w-12 h-12 object-contain">
-            <div>
-              <p class="font-display font-bold uppercase text-white text-base">Vill du testa en position på planen?</p>
-              <p class="text-xs text-[#94A3B8]">Kom på en öppen träning i Falun eller Borlänge.</p>
-            </div>
-          </div>
-          <a href="#anmalan" class="w-full sm:w-auto bg-[#C5222F] hover:bg-[#A8031E] text-white font-display font-bold uppercase text-sm px-5 py-2.5 rounded-full text-center transition-colors">
-            Anmäl intresse här
-          </a>
         </div>
       </div>
     </section>
@@ -468,7 +441,7 @@
     <!-- ---------------------------------------- -->
     <!-- SECTION D: YOUTH & PARENTS PATHWAY       -->
     <!-- ---------------------------------------- -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 border-b border-white/10" id="ungdom">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 border-b border-white/10" id="youth">
       <div class="max-w-6xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
           
@@ -476,20 +449,20 @@
             <div>
               <p class="font-display font-bold uppercase text-[#F59E0B] tracking-widest text-sm">Ungdomssatsning</p>
               <h2 class="font-display font-black text-4xl sm:text-5xl uppercase text-white tracking-tight mb-4">
-                Ungdom & Föräldrar
+                Youth & Parents
               </h2>
               <p class="text-[#94A3B8] text-base leading-relaxed mb-6">
-                Vår ungdomsverksamhet sätter trygghet, personlig utveckling och kamratskap i främsta rummet. Vi tränar regelbundet i Falun och Borlänge.
+                Vår ungdomsverksamhet sätter trygghet, gemenskap och långsiktig atletisk utveckling i första rummet. Vi tränar regelbundet i Falun och Borlänge.
               </p>
             </div>
 
             <!-- Youth Visual -->
             <div class="relative w-full aspect-[4/3] rounded-3xl overflow-hidden border border-white/10 shadow-lg bg-[#0C1530]">
-              <img src="assets/youth-football-player.jpg" alt="Dalecarlia Rebels Amerikansk Fotboll Ungdomsspelare" class="w-full h-full object-cover">
+              <img src="assets/youth-football-player.jpg" alt="Dalecarlia Rebels Youth American Football Player" class="w-full h-full object-cover">
               <div class="absolute inset-0 bg-gradient-to-t from-[#060E20] via-transparent to-transparent"></div>
               <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between">
                 <span class="bg-[#C5222F] text-white font-display font-bold uppercase text-xs px-3 py-1 rounded-full">
-                  Ungdom & Juniorer
+                  Youth & Juniors
                 </span>
                 <span class="text-xs text-white/90 font-semibold">Falun & Borlänge</span>
               </div>
@@ -503,67 +476,69 @@
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div class="bg-[#131B2E] border border-white/5 p-4 rounded-2xl">
                 <span class="material-symbols-outlined text-[#C5222F] text-2xl mb-1">health_and_safety</span>
-                <h4 class="font-display font-bold text-lg text-white uppercase mb-1">Säkerhet först</h4>
-                <p class="text-xs text-[#94A3B8] leading-relaxed">Stegvis progression från flaggfotboll och teknik innan kontakt introduceras.</p>
+                <h4 class="font-display font-bold text-lg text-white uppercase mb-1">Safety First</h4>
+                <p class="text-xs text-[#94A3B8] leading-relaxed">Step-by-step learning from flag football and technique before contact is introduced.</p>
               </div>
               <div class="bg-[#131B2E] border border-white/5 p-4 rounded-2xl">
                 <span class="material-symbols-outlined text-[#F59E0B] text-2xl mb-1">handshake</span>
-                <h4 class="font-display font-bold text-lg text-white uppercase mb-1">Kamratskap</h4>
-                <p class="text-xs text-[#94A3B8] leading-relaxed">Alla stöttar alla. Vi bygger stark gemenskap både på och utanför planen.</p>
+                <h4 class="font-display font-bold text-lg text-white uppercase mb-1">Camaraderie</h4>
+                <p class="text-xs text-[#94A3B8] leading-relaxed">Everyone supports everyone. We build strong bonds both on and off the field.</p>
               </div>
               <div class="bg-[#131B2E] border border-white/5 p-4 rounded-2xl">
                 <span class="material-symbols-outlined text-white text-2xl mb-1">pace</span>
-                <h4 class="font-display font-bold text-lg text-white uppercase mb-1">Åldersanpassat</h4>
-                <p class="text-xs text-[#94A3B8] leading-relaxed">Övningar utformade efter deltagarnas nivå under certifierade ledare.</p>
+                <h4 class="font-display font-bold text-lg text-white uppercase mb-1">Age-Adapted</h4>
+                <p class="text-xs text-[#94A3B8] leading-relaxed">Drills and pacing customized for each child's physical development.</p>
               </div>
             </div>
 
-            <!-- FAQ Accordion -->
-            <div>
-              <h3 class="font-display font-black text-2xl uppercase text-white mb-3">Frågor från föräldrar</h3>
-              <div class="flex flex-col gap-2.5" id="faq-accordion">
-                
-                <div class="faq-item bg-[#131B2E] border border-white/5 rounded-2xl overflow-hidden">
-                  <button type="button" class="faq-trigger w-full p-4 text-left flex items-center justify-between text-white font-semibold text-sm sm:text-base">
-                    <span>Vad krävs för att prova på?</span>
-                    <span class="material-symbols-outlined text-[#94A3B8] transition-transform">expand_more</span>
-                  </button>
-                  <div class="faq-content hidden px-4 pb-4 text-[#94A3B8] text-sm leading-relaxed border-t border-white/5 pt-3">
-                    Endast vanliga träningskläder och fotbollsskor eller löparskor. All specialutrustning som hjälm, axelskydd och bollar finns att låna kostnadsfritt under de första tillfällena!
-                  </div>
-                </div>
+            <!-- Parents FAQ Accordion -->
+            <div class="bg-[#131B2E] border border-white/10 rounded-3xl p-6 sm:p-8">
+              <h3 class="font-display font-black text-2xl text-white uppercase mb-4 flex items-center gap-2">
+                <span class="material-symbols-outlined text-[#F59E0B]">help</span> Questions Parents Ask
+              </h3>
 
-                <div class="faq-item bg-[#131B2E] border border-white/5 rounded-2xl overflow-hidden">
-                  <button type="button" class="faq-trigger w-full p-4 text-left flex items-center justify-between text-white font-semibold text-sm sm:text-base">
-                    <span>Hur fungerar säkerheten och tacklingsinlärning?</span>
-                    <span class="material-symbols-outlined text-[#94A3B8] transition-transform">expand_more</span>
-                  </button>
-                  <div class="faq-content hidden px-4 pb-4 text-[#94A3B8] text-sm leading-relaxed border-t border-white/5 pt-3">
-                    Nybörjare lär sig kroppskontroll, fallteknik och spelförståelse utan tacklingar först. Säkerhet enligt SWE3:s riktlinjer med utbildade ledare är alltid högsta prioritet.
-                  </div>
-                </div>
+              <div class="space-y-3" id="faq-accordion">
+                <details class="group bg-[#060E20]/60 border border-white/5 rounded-2xl p-4 cursor-pointer" open>
+                  <summary class="font-display font-bold uppercase text-white text-base flex justify-between items-center list-none">
+                    <span>What ages are welcome? Can girls play?</span>
+                    <span class="material-symbols-outlined text-sm text-[#F59E0B] transition-transform group-open:rotate-180">expand_more</span>
+                  </summary>
+                  <p class="text-xs sm:text-sm text-[#94A3B8] mt-2.5 leading-relaxed font-normal">
+                    American football is for everyone! We welcome boys and girls across all youth and junior age groups. Contact us to find the right practice group for your child.
+                  </p>
+                </details>
 
-                <div class="faq-item bg-[#131B2E] border border-white/5 rounded-2xl overflow-hidden">
-                  <button type="button" class="faq-trigger w-full p-4 text-left flex items-center justify-between text-white font-semibold text-sm sm:text-base">
-                    <span>Vilka åldrar är välkomna?</span>
-                    <span class="material-symbols-outlined text-[#94A3B8] transition-transform">expand_more</span>
-                  </button>
-                  <div class="faq-content hidden px-4 pb-4 text-[#94A3B8] text-sm leading-relaxed border-t border-white/5 pt-3">
-                    Vi välkomnar barn och ungdomar från 10–19 år indelade i lämpliga åldersgrupper samt vuxna spelare i seniorlaget. Både killar och tjejer är varmt välkomna!
-                  </div>
-                </div>
+                <details class="group bg-[#060E20]/60 border border-white/5 rounded-2xl p-4 cursor-pointer">
+                  <summary class="font-display font-bold uppercase text-white text-base flex justify-between items-center list-none">
+                    <span>Is previous experience required?</span>
+                    <span class="material-symbols-outlined text-sm text-[#F59E0B] transition-transform group-open:rotate-180">expand_more</span>
+                  </summary>
+                  <p class="text-xs sm:text-sm text-[#94A3B8] mt-2.5 leading-relaxed font-normal">
+                    None whatsoever. Most of our players started with zero football background. Our certified coaches teach every stance, step, and drill from square one.
+                  </p>
+                </details>
 
-                <div class="faq-item bg-[#131B2E] border border-white/5 rounded-2xl overflow-hidden">
-                  <button type="button" class="faq-trigger w-full p-4 text-left flex items-center justify-between text-white font-semibold text-sm sm:text-base">
-                    <span>Kostnader och medlemskap?</span>
-                    <span class="material-symbols-outlined text-[#94A3B8] transition-transform">expand_more</span>
-                  </button>
-                  <div class="faq-content hidden px-4 pb-4 text-[#94A3B8] text-sm leading-relaxed border-t border-white/5 pt-3">
-                    Att prova på är alltid helt gratis! Väljer man att fortsätta har föreningen låga avgifter för att alla ska ha råd att idrotta.
-                  </div>
-                </div>
+                <details class="group bg-[#060E20]/60 border border-white/5 rounded-2xl p-4 cursor-pointer">
+                  <summary class="font-display font-bold uppercase text-white text-base flex justify-between items-center list-none">
+                    <span>How is contact introduced safely?</span>
+                    <span class="material-symbols-outlined text-sm text-[#F59E0B] transition-transform group-open:rotate-180">expand_more</span>
+                  </summary>
+                  <p class="text-xs sm:text-sm text-[#94A3B8] mt-2.5 leading-relaxed font-normal">
+                    Beginners learn body control, falling safely, and spatial awareness before any contact exercises. Safety according to SWE3 national guidelines with trained coaches is always our #1 priority.
+                  </p>
+                </details>
 
+                <details class="group bg-[#060E20]/60 border border-white/5 rounded-2xl p-4 cursor-pointer">
+                  <summary class="font-display font-bold uppercase text-white text-base flex justify-between items-center list-none">
+                    <span>What equipment is needed for the first session?</span>
+                    <span class="material-symbols-outlined text-sm text-[#F59E0B] transition-transform group-open:rotate-180">expand_more</span>
+                  </summary>
+                  <p class="text-xs sm:text-sm text-[#94A3B8] mt-2.5 leading-relaxed font-normal">
+                    Just athletic workout clothes, a water bottle, and soccer cleats or running shoes. The club provides helmets and shoulder pads for loan during introductory sessions.
+                  </p>
+                </details>
               </div>
+
             </div>
 
           </div>
@@ -575,15 +550,15 @@
     <!-- ---------------------------------------- -->
     <!-- SECTION E: NEWS & PARTNER STRIP          -->
     <!-- ---------------------------------------- -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#0B1326] border-b border-white/10" id="nyheter">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#0B1326] border-b border-white/10" id="updates">
       <div class="max-w-6xl mx-auto">
         <div class="flex items-center justify-between mb-8">
           <div>
-            <p class="font-display font-bold uppercase text-[#F59E0B] tracking-widest text-sm">Aktuellt</p>
-            <h2 class="font-display font-black text-4xl sm:text-5xl uppercase text-white tracking-tight">Senaste nytt</h2>
+            <p class="font-display font-bold uppercase text-[#F59E0B] tracking-widest text-sm">Latest News</p>
+            <h2 class="font-display font-black text-4xl sm:text-5xl uppercase text-white tracking-tight">Club Updates</h2>
           </div>
-          <a href="#anmalan" class="text-sm font-bold uppercase tracking-wider text-[#F59E0B] hover:underline flex items-center gap-1">
-            Gå med i laget <span class="material-symbols-outlined text-base">arrow_forward</span>
+          <a href="#contact" class="text-sm font-bold uppercase tracking-wider text-[#F59E0B] hover:underline flex items-center gap-1">
+            Join the team <span class="material-symbols-outlined text-base">arrow_forward</span>
           </a>
         </div>
 
@@ -594,15 +569,15 @@
             <div>
               <div class="flex items-center gap-2 mb-3">
                 <span class="bg-[#3E2400] text-[#F59E0B] font-display font-bold uppercase text-xs px-2.5 py-0.5 rounded">Partner</span>
-                <span class="text-xs text-[#94A3B8]">Maj 2026</span>
+                <span class="text-xs text-[#94A3B8]">May 2026</span>
               </div>
-              <h3 class="font-display font-black text-xl text-white uppercase mb-2">Föreningssponsring 2026 — Falu Energi & Vatten</h3>
+              <h3 class="font-display font-black text-xl text-white uppercase mb-2">Club Sponsorship 2026 — Falu Energi & Vatten</h3>
               <p class="text-sm text-[#94A3B8] leading-relaxed">
-                Ett starkt lokalt partnerskap som stöttar ungdomsverksamhet och möjligheter för unga att idrotta i Falun och Borlänge.
+                A strong local partnership supporting youth sports and athletic opportunities in Falun and Borlänge.
               </p>
             </div>
             <a href="#partners" class="mt-6 text-sm font-bold text-[#F59E0B] hover:underline flex items-center gap-1">
-              Läs mer om samarbetet ↗
+              Read more about the partnership ↗
             </a>
           </article>
 
@@ -610,16 +585,16 @@
           <article class="bg-[#131B2E] border border-white/10 p-6 rounded-3xl flex flex-col justify-between hover:border-white/20 transition-all">
             <div>
               <div class="flex items-center gap-2 mb-3">
-                <span class="bg-white/10 text-white font-display font-bold uppercase text-xs px-2.5 py-0.5 rounded">Ungdom</span>
+                <span class="bg-white/10 text-white font-display font-bold uppercase text-xs px-2.5 py-0.5 rounded">Youth</span>
                 <span class="text-xs text-[#94A3B8]">April 2026</span>
               </div>
-              <h3 class="font-display font-black text-xl text-white uppercase mb-2">Rebels växlar upp satsningen på ungdom och nybörjare</h3>
+              <h3 class="font-display font-black text-xl text-white uppercase mb-2">Rebels Expand Youth & Beginner Recruitment</h3>
               <p class="text-sm text-[#94A3B8] leading-relaxed">
-                Fler öppna träningstider etableras nu i Falun och Borlänge under ledning av tränarteamet.
+                Adding open practice times in Falun and Borlänge with dedicated coaching staff.
               </p>
             </div>
-            <a href="#ungdom" class="mt-6 text-sm font-bold text-[#F59E0B] hover:underline flex items-center gap-1">
-              Läs mer om ungdomssatsningen ↗
+            <a href="#youth" class="mt-6 text-sm font-bold text-[#F59E0B] hover:underline flex items-center gap-1">
+              Read more about youth sports ↗
             </a>
           </article>
 
@@ -627,16 +602,16 @@
           <article class="bg-[#131B2E] border border-white/10 p-6 rounded-3xl flex flex-col justify-between hover:border-white/20 transition-all">
             <div>
               <div class="flex items-center gap-2 mb-3">
-                <span class="bg-[#C5222F]/30 text-[#FFA4AD] font-display font-bold uppercase text-xs px-2.5 py-0.5 rounded">Rekrytering</span>
-                <span class="text-xs text-[#94A3B8]">Mars 2026</span>
+                <span class="bg-[#C5222F]/30 text-[#FFA4AD] font-display font-bold uppercase text-xs px-2.5 py-0.5 rounded">Recruiting</span>
+                <span class="text-xs text-[#94A3B8]">March 2026</span>
               </div>
-              <h3 class="font-display font-black text-xl text-white uppercase mb-2">Rookie Days på Kvarnsvedens IP i Borlänge</h3>
+              <h3 class="font-display font-black text-xl text-white uppercase mb-2">Rookie Days at Kvarnsvedens IP in Borlänge</h3>
               <p class="text-sm text-[#94A3B8] leading-relaxed">
-                Stort intresse när Rebels bjöd in nyfikna deltagare i alla åldrar att prova på kast, snabbhet och skydd utan krav på erfarenhet.
+                Great turnout as community members of all ages tried throwing, agility drills, and protective gear without prior experience.
               </p>
             </div>
-            <a href="#anmalan" class="mt-6 text-sm font-bold text-[#F59E0B] hover:underline flex items-center gap-1">
-              Anmäl dig till nästa träning ↗
+            <a href="#contact" class="mt-6 text-sm font-bold text-[#F59E0B] hover:underline flex items-center gap-1">
+              Sign up for the next session ↗
             </a>
           </article>
 
@@ -649,17 +624,17 @@
               <span class="material-symbols-outlined text-3xl">handshake</span>
             </div>
             <div>
-              <p class="font-display font-black text-xl text-white uppercase">Stolta föreningspartners</p>
-              <p class="text-xs text-[#94A3B8]">Med stöd av Falu Energi & Vatten och anslutna till SWE3.</p>
+              <p class="font-display font-black text-xl text-white uppercase">Proud Community Partners</p>
+              <p class="text-xs text-[#94A3B8]">Supported by Falu Energi & Vatten and affiliated with SWE3.</p>
             </div>
           </div>
 
           <div class="flex items-center gap-6">
             <div class="bg-white rounded-xl px-4 py-2 flex items-center justify-center">
-              <img src="assets/swe3-logo.jpg" alt="SWE3 Förbundet" class="h-8 w-auto object-contain">
+              <img src="assets/swe3-logo.jpg" alt="SWE3 Federation" class="h-8 w-auto object-contain">
             </div>
-            <a href="#anmalan" class="bg-white/10 hover:bg-white/20 text-white font-display font-bold uppercase text-sm px-5 py-2.5 rounded-full border border-white/20 transition-all">
-              Bli partner / Kontakt ↗
+            <a href="#contact" class="bg-white/10 hover:bg-white/20 text-white font-display font-bold uppercase text-sm px-5 py-2.5 rounded-full border border-white/20 transition-all">
+              Become a Partner / Contact ↗
             </a>
           </div>
         </div>
@@ -668,87 +643,87 @@
     </section>
 
     <!-- ---------------------------------------- -->
-    <!-- SECTION G: INTAKE & CONTACT FORM         -->
+    <!-- SECTION F: INTAKE & CONTACT FORM         -->
     <!-- ---------------------------------------- -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8" id="anmalan">
+    <section class="py-16 px-4 sm:px-6 lg:px-8" id="contact">
       <div class="max-w-3xl mx-auto">
         <div class="bg-gradient-to-br from-[#172242] to-[#131B2E] border-2 border-white/15 p-8 sm:p-10 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.6)] relative overflow-hidden">
           
-          <div class="mb-6">
-            <span class="bg-[#C5222F] text-white font-display font-bold uppercase text-xs px-3.5 py-1 rounded-full inline-block mb-2">
-              Gratis prova på
+          <div class="text-center mb-8">
+            <span class="bg-[#213567] text-[#F59E0B] font-display font-black uppercase text-xs px-3.5 py-1.5 rounded-full border border-[#F59E0B]/30 inline-block mb-3">
+              Become a Rebel
             </span>
-            <h2 class="font-display font-black text-3xl sm:text-4xl uppercase text-white tracking-tight">
-              Anmäl ditt intresse
+            <h2 class="font-display font-black text-3xl sm:text-5xl uppercase text-white tracking-tight mb-3">
+              Sign Up to Try American Football
             </h2>
-            <p class="text-sm text-[#94A3B8] mt-1">
-              Det tar 30 sekunder. Vi återkommer med aktuella träningstider och svarar på dina frågor!
+            <p class="text-sm sm:text-base text-[#94A3B8] max-w-lg mx-auto">
+              Berätta lite om dig själv så hjälper vi dig till nästa träning i Falun eller Borlänge. Nybörjare i alla åldrar är varmt välkomna!
             </p>
           </div>
 
-          <form id="rebels-enquiry-form" class="flex flex-col gap-4" onsubmit="event.preventDefault();">
-            <div>
-              <label for="user-name" class="block font-display font-bold uppercase text-xs tracking-wider text-white mb-1.5">
-                Ditt namn *
-              </label>
-              <input type="text" id="user-name" required placeholder="För- och efternamn" class="w-full bg-[#060E20] border border-white/10 px-4 py-3 rounded-xl text-white placeholder-white/30 focus:outline-none focus:border-[#C5222F] transition-colors">
-            </div>
-
-            <div>
-              <label for="user-contact" class="block font-display font-bold uppercase text-xs tracking-wider text-white mb-1.5">
-                E-postadress eller telefonnummer *
-              </label>
-              <input type="text" id="user-contact" required placeholder="exempel@epost.se eller 070-123 45 67" class="w-full bg-[#060E20] border border-white/10 px-4 py-3 rounded-xl text-white placeholder-white/30 focus:outline-none focus:border-[#C5222F] transition-colors">
+          <!-- The Form -->
+          <form id="rebels-enquiry-form" class="space-y-4 text-left">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="user-name" class="block text-xs uppercase font-bold text-white/90 mb-1">Ditt namn *</label>
+                <input type="text" id="user-name" required placeholder="För- och efternamn" class="w-full bg-[#060E20] border border-white/15 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-[#F59E0B] text-sm">
+              </div>
+              <div>
+                <label for="user-contact" class="block text-xs uppercase font-bold text-white/90 mb-1">E-post eller telefonnummer *</label>
+                <input type="text" id="user-contact" required placeholder="t.ex. namn@exempel.se / 070-1234567" class="w-full bg-[#060E20] border border-white/15 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-[#F59E0B] text-sm">
+              </div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label for="user-commune" class="block font-display font-bold uppercase text-xs tracking-wider text-white mb-1.5">
-                  Kommun
-                </label>
-                <select id="user-commune" class="w-full bg-[#060E20] border border-white/10 px-4 py-3 rounded-xl text-white focus:outline-none focus:border-[#C5222F] transition-colors">
+                <label for="user-commune" class="block text-xs uppercase font-bold text-white/90 mb-1">Municipality / City</label>
+                <select id="user-commune" class="w-full bg-[#060E20] border border-white/15 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#F59E0B] text-sm">
                   <option value="Falun">Falun</option>
                   <option value="Borlänge">Borlänge</option>
-                  <option value="Annan i Dalarna">Annan kommun i Dalarna</option>
+                  <option value="Säter">Säter</option>
+                  <option value="Avesta">Avesta</option>
+                  <option value="Leksand">Leksand</option>
+                  <option value="Rättvik">Rättvik</option>
+                  <option value="Hedemora">Hedemora</option>
+                  <option value="Other Dalarna">Other Dalarna</option>
                 </select>
               </div>
 
               <div>
-                <label for="user-category" class="block font-display font-bold uppercase text-xs tracking-wider text-white mb-1.5">
-                  Intresserad som
-                </label>
-                <select id="user-category" class="w-full bg-[#060E20] border border-white/10 px-4 py-3 rounded-xl text-white focus:outline-none focus:border-[#C5222F] transition-colors">
-                  <option value="Ungdomsspelare">Ungdomsspelare</option>
-                  <option value="Senior / Vuxen">Senior / Vuxen spelare</option>
-                  <option value="Förälder">Förälder eller vårdnadshavare</option>
-                  <option value="Återvändande spelare">Återvändande spelare</option>
-                  <option value="Partner eller Sponsor">Partner / Sponsor</option>
+                <label for="user-category" class="block text-xs uppercase font-bold text-white/90 mb-1">Interested as</label>
+                <select id="user-category" class="w-full bg-[#060E20] border border-white/15 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#F59E0B] text-sm">
+                  <option value="Youth Player">Youth Player (under 18)</option>
+                  <option value="Adult Player">Adult Player (18+)</option>
+                  <option value="Returning Player">Returning Player</option>
+                  <option value="Parent/Guardian">Parent or Guardian</option>
+                  <option value="Volunteer/Coach">Volunteer / Coach</option>
                 </select>
               </div>
             </div>
 
             <div>
-              <label for="user-msg" class="block font-display font-bold uppercase text-xs tracking-wider text-white mb-1.5">
-                Meddelande / Frågor (frivilligt)
-              </label>
-              <textarea id="user-msg" rows="3" placeholder="T.ex. ålder, vill testa position, behöver låna utrustning..." class="w-full bg-[#060E20] border border-white/10 px-4 py-3 rounded-xl text-white placeholder-white/30 focus:outline-none focus:border-[#C5222F] transition-colors"></textarea>
+              <label for="user-msg" class="block text-xs uppercase font-bold text-white/90 mb-1">Meddelande / Frågor (valfritt)</label>
+              <textarea id="user-msg" rows="3" placeholder="Tell us if you have played sports before, any questions about gear, or specific dates..." class="w-full bg-[#060E20] border border-white/15 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-[#F59E0B] text-sm"></textarea>
             </div>
 
-            <div class="flex flex-col sm:flex-row gap-3 pt-2">
-              <button type="button" id="submit-mail-btn" class="flex-1 bg-gradient-to-r from-[#C5222F] to-[#A8031E] hover:from-[#D32F2F] hover:to-[#991B1B] text-white font-display font-bold uppercase text-lg py-3.5 px-6 rounded-full shadow-[0_0_24px_rgba(197,34,47,0.5)] flex items-center justify-center gap-2 transition-all">
+            <!-- Form Actions -->
+            <div class="flex flex-col sm:flex-row gap-3 pt-3">
+              <button type="button" id="submit-mail-btn" class="flex-1 bg-gradient-to-r from-[#C5222F] to-[#A8031E] hover:from-[#D32F2F] hover:to-[#991B1B] text-white font-display font-bold uppercase text-lg py-3.5 px-6 rounded-full shadow-[0_0_20px_rgba(197,34,47,0.45)] transition-all flex items-center justify-center gap-2">
                 <span class="material-symbols-outlined text-xl">mail</span>
-                <span>Öppna mejl till klubben</span>
+                <span>Open Email to Club</span>
               </button>
-
-              <button type="button" id="copy-summary-btn" class="bg-white/10 hover:bg-white/20 text-white font-display font-bold uppercase text-base py-3.5 px-6 rounded-full border border-white/20 flex items-center justify-center gap-2 transition-all">
-                <span class="material-symbols-outlined text-xl">content_copy</span>
+              
+              <button type="button" id="copy-summary-btn" class="bg-white/10 hover:bg-white/15 text-white font-display font-bold uppercase text-base py-3.5 px-6 rounded-full border border-white/20 transition-all flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-lg">content_copy</span>
                 <span id="copy-btn-text">Kopiera meddelande</span>
               </button>
             </div>
 
-            <p class="text-xs text-center text-[#94A3B8] pt-2">
-              Du kan också mejla direkt till oss på <a href="mailto:dalecarliarebelsaff@gmail.com" class="text-[#F59E0B] underline font-bold">dalecarliarebelsaff@gmail.com</a>
+            <p class="text-[11px] text-[#94A3B8] text-center pt-2">
+              Privacy guarantee: Your info is processed directly in your device and opens your email app. No tracking cookies.
             </p>
+
           </form>
 
         </div>
@@ -758,51 +733,52 @@
   </main>
 
   <!-- ========================================== -->
-  <!-- 4. SITE FOOTER                             -->
+  <!-- 4. FOOTER                                  -->
   <!-- ========================================== -->
-  <footer class="bg-[#030814] border-t border-white/10 pt-16 pb-24 lg:pb-16 px-4 sm:px-6 lg:px-8 text-sm">
+  <footer class="bg-[#0B1326] border-t border-white/10 pt-16 pb-12 px-4 sm:px-6 lg:px-8 text-sm">
     <div class="max-w-6xl mx-auto">
       
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
         
-        <!-- Col 1: Brand & Motto -->
-        <div class="md:col-span-2 flex flex-col items-start">
-          <div class="bg-white rounded-xl p-2 mb-4 inline-block shadow-md">
+        <!-- Col 1: Club Info -->
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
             <img src="assets/rebels-logo-small.webp" alt="Dalecarlia Rebels Crest" class="h-12 w-auto object-contain">
+            <div>
+              <h3 class="font-display font-black text-2xl text-white uppercase tracking-tight">Dalecarlia Rebels AFF</h3>
+              <p class="text-xs text-[#F59E0B] font-bold uppercase tracking-wider">Falun & Borlänge · Dalarna, Sverige</p>
+            </div>
           </div>
-          <span class="text-[#F59E0B] font-display font-black text-xl tracking-wider uppercase mb-1">VI ÄR REBELS.</span>
-          <p class="text-[#94A3B8] max-w-sm mb-4">
-            Amerikansk fotboll i Falun, Borlänge och hela Dalarna. En idrottsgemenskap öppen för alla.
+          <p class="text-[#94A3B8] text-sm leading-relaxed max-w-sm mb-4">
+            Amerikansk fotbollsförening med verksamhet i Falun, Borlänge och hela Dalarna. Ansluten till <strong class="text-white">SWE3</strong> · Stöds av <strong class="text-white">Falu Energi & Vatten</strong>.
           </p>
-          <p class="text-xs text-white/70">
-            Ansluten till <strong class="text-white">SWE3</strong> · Stöds av <strong class="text-white">Falu Energi & Vatten</strong>
-          </p>
+          <p class="font-display font-black text-xl text-[#F59E0B] uppercase tracking-wider">VI ÄR REBELS.</p>
         </div>
 
         <!-- Col 2: Navigation -->
         <div>
           <h4 class="font-display font-bold uppercase text-[#F59E0B] tracking-wider text-base mb-3">Snabblänkar</h4>
           <ul class="flex flex-col gap-2 text-[#94A3B8]">
-            <li><a href="#anmalan" class="hover:text-white transition-colors">Börja spela / Anmälan</a></li>
-            <li><a href="#position-finder" class="hover:text-white transition-colors">Hitta din position</a></li>
-            <li><a href="#ungdom" class="hover:text-white transition-colors">Ungdom & Föräldrar</a></li>
-            <li><a href="#sasong" class="hover:text-white transition-colors">Säsongen 2026</a></li>
-            <li><a href="#partners" class="hover:text-white transition-colors">Partners & Sponsring</a></li>
-            <li><a href="#nyheter" class="hover:text-white transition-colors">Aktuellt & Nyheter</a></li>
+            <li><a href="#contact" class="hover:text-white transition-colors">Anmäl intresse / Träna</a></li>
+            <li><a href="#positions" class="hover:text-white transition-colors">Find Your Position</a></li>
+            <li><a href="#youth" class="hover:text-white transition-colors">Ungdom & Föräldrar</a></li>
+            <li><a href="#season" class="hover:text-white transition-colors">Säsongen 2026</a></li>
+            <li><a href="#partners" class="hover:text-white transition-colors">Partners & Club</a></li>
+            <li><a href="#updates" class="hover:text-white transition-colors">Latest Updates</a></li>
           </ul>
         </div>
 
-        <!-- Col 3: Contact & Global Domain -->
+        <!-- Col 3: Contact & Swedish Domain -->
         <div>
-          <h4 class="font-display font-bold uppercase text-[#F59E0B] tracking-wider text-base mb-3">Kontakt & Domäner</h4>
-          <p class="text-xs text-[#94A3B8] mb-2">E-post till klubben:</p>
+          <h4 class="font-display font-bold uppercase text-[#F59E0B] tracking-wider text-base mb-3">Contact & Domains</h4>
+          <p class="text-xs text-[#94A3B8] mb-2">Club Email:</p>
           <a href="mailto:dalecarliarebelsaff@gmail.com" class="text-white font-semibold hover:text-[#F59E0B] transition-colors mb-4 block">
             dalecarliarebelsaff@gmail.com
           </a>
 
-          <p class="text-xs text-[#94A3B8] mb-1">Engelsk webbplats:</p>
-          <a href="https://dalecarliarebels.com/" hreflang="en" lang="en" class="text-[#F59E0B] hover:underline font-bold text-xs inline-flex items-center gap-1 mb-4">
-            dalecarliarebels.com <span class="material-symbols-outlined text-xs">north_east</span>
+          <p class="text-xs text-[#94A3B8] mb-1">Swedish Website:</p>
+          <a href="https://dalecarliarebels.se/" hreflang="sv" lang="sv" class="text-[#F59E0B] hover:underline font-bold text-xs inline-flex items-center gap-1 mb-4">
+            dalecarliarebels.se <span class="material-symbols-outlined text-xs">north_east</span>
           </a>
 
           <div class="flex items-center gap-3">
@@ -818,11 +794,11 @@
       </div>
 
       <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#94A3B8]">
-        <p>© <span id="current-year">2026</span> Dalecarlia Rebels AFF. Alla rättigheter förbehållna.</p>
+        <p>© <span id="current-year">2026</span> Dalecarlia Rebels AFF. All rights reserved.</p>
         <div class="flex items-center gap-4">
-          <a href="privacy.html" class="hover:text-white transition-colors">Integritetspolicy</a>
+          <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
           <span>·</span>
-          <span>Sverige</span>
+          <span>Sweden</span>
         </div>
       </div>
 
@@ -838,21 +814,21 @@
         <span class="material-symbols-outlined text-xl">home</span>
         <span class="text-[11px] font-display uppercase tracking-wider">Hem</span>
       </a>
-      <a href="#position-finder" class="flex flex-col items-center justify-center gap-1 text-[#94A3B8] hover:text-white">
+      <a href="#positions" class="flex flex-col items-center justify-center gap-1 text-[#94A3B8] hover:text-white">
         <span class="material-symbols-outlined text-xl">sports_football</span>
         <span class="text-[11px] font-display uppercase tracking-wider">Positioner</span>
       </a>
-      <a href="#ungdom" class="flex flex-col items-center justify-center gap-1 text-[#94A3B8] hover:text-white">
+      <a href="#youth" class="flex flex-col items-center justify-center gap-1 text-[#94A3B8] hover:text-white">
         <span class="material-symbols-outlined text-xl">diversity_3</span>
-        <span class="text-[11px] font-display uppercase tracking-wider">Ungdom</span>
+        <span class="text-[11px] font-display uppercase tracking-wider">Youth</span>
       </a>
-      <a href="#sasong" class="flex flex-col items-center justify-center gap-1 text-[#94A3B8] hover:text-white">
+      <a href="#season" class="flex flex-col items-center justify-center gap-1 text-[#94A3B8] hover:text-white">
         <span class="material-symbols-outlined text-xl">event</span>
-        <span class="text-[11px] font-display uppercase tracking-wider">Säsong</span>
+        <span class="text-[11px] font-display uppercase tracking-wider">Season</span>
       </a>
-      <a href="#anmalan" class="flex flex-col items-center justify-center gap-1 text-[#94A3B8] hover:text-white">
+      <a href="#contact" class="flex flex-col items-center justify-center gap-1 text-[#94A3B8] hover:text-white">
         <span class="material-symbols-outlined text-xl">mail</span>
-        <span class="text-[11px] font-display uppercase tracking-wider">Anmälan</span>
+        <span class="text-[11px] font-display uppercase tracking-wider">Sign Up</span>
       </a>
     </div>
   </nav>
@@ -884,104 +860,95 @@
     const rolesData = {
       speed: {
         title: "Wide Receiver & Defensive Back",
-        desc: "Älskar du sprint, snabba reflexer och luftdueller? Som Wide Receiver fångar du spektakulära passningar. Som Defensive Back jagar du brytningar och stoppar motståndarnas snabbaste löpare.",
+        desc: "Älskar du sprint, snabba riktningsförändringar och luftdueller? Som Wide Receiver fångar du matchvinnande touchdown-passningar. Som Defensive Back punktmarkerar du motståndarnas stjärnor och jagar interceptions.",
         trait: "Snabbhet & tajming",
         badge: "Anfall & Försvar"
       },
       strength: {
         title: "Offensive & Defensive Line",
-        desc: "Lagets motor och mur! På linjen avgörs varje spel genom kraft, teknik och stabilitet. Oumbärliga spelare som skyddar spelfördelaren eller bryter igenom för sack.",
-        trait: "Fysisk styrka & explosivitet",
-        badge: "Tungviktarna"
+        desc: "Lagets motor och fundament! Matcher avgörs i linjen genom teknik, hävstång och råstyrka. Skydda quarterbacken eller storma fram och bryt motståndarens anfall.",
+        trait: "Fysisk styrka & hävstång",
+        badge: "Linjespelarna"
       },
       brain: {
         title: "Quarterback & Free Safety",
-        desc: "Lagets spelfördelare och ledare på planen. Du läser spelet, fördelar bollarna med precision eller organiserar försvarets sista utpost med kyligt lugn.",
-        trait: "Spelförståelse & ledarskap",
-        badge: "Taktikerna"
+        desc: "Lagets taktiska ledare. Du läser motståndarförsvaret, fördelar bollen med precision, eller styr defensiven som sista utpost med kyla och spelförståelse.",
+        trait: "Speluppfattning & ledarskap",
+        badge: "Fältgeneraler"
       },
-      aim: {
-        title: "Kicker & Punter / Slot Receiver",
-        desc: "Precision och mental fokus när matchen ska avgöras på sekunder. Du levererar fältmål från distans eller opererar i trånga fickor med kirurgisk precision.",
-        trait: "Koordination & fokus",
-        badge: "Special Teams"
-      },
-      grit: {
+      power: {
         title: "Running Back & Linebacker",
-        desc: "Hjärtat av duellerna. Som Running Back banar du väg genom motståndarnas murar med vilja och balans. Som Linebacker läser du löpningar och tacklar med beslutsamhet.",
-        trait: "Viljestyrka & dynamik",
-        badge: "Kärntruppen"
+        desc: "Kompromisslös energi och fysisk oräddhet. Running Backs exploderar genom hålen för viktiga yards. Linebackers läser anfallet och stoppar löpningar med pondus.",
+        trait: "Vilja & explosivitet",
+        badge: "Hårdföra tacklingar"
+      },
+      precision: {
+        title: "Kicker, Punter & Specialist",
+        desc: "Special teams avgör matcher i kritiska lägen. Högt fokus, benstyrka och mentalt lugn under avgörande sparkar.",
+        trait: "Precision & fokus",
+        badge: "Special teams"
+      },
+      hands: {
+        title: "Tight End & Slot Receiver",
+        desc: "En mångsidig hybrid som både blockerar defensiva bjässar och rycker loss för tuffa mottagningar i mitten av planen.",
+        trait: "Mångsidighet & fångstsäkerhet",
+        badge: "Mångsidig spelare"
       }
     };
 
-    const rolePills = document.querySelectorAll('.role-pill');
+    const pills = document.querySelectorAll('.role-pill');
+    const roleBadge = document.getElementById('role-badge');
     const roleTitle = document.getElementById('role-title');
     const roleDesc = document.getElementById('role-desc');
     const roleTrait = document.getElementById('role-trait');
-    const roleBadge = document.getElementById('role-badge');
+    const positionCard = document.getElementById('position-card');
 
-    rolePills.forEach(pill => {
+    pills.forEach(pill => {
       pill.addEventListener('click', () => {
-        rolePills.forEach(p => {
-          p.classList.remove('bg-[#C5222F]', 'text-white', 'shadow-lg');
-          p.classList.add('bg-[#171F33]', 'text-[#DAE2FD]');
-        });
-        pill.classList.remove('bg-[#171F33]', 'text-[#DAE2FD]');
-        pill.classList.add('bg-[#C5222F]', 'text-white', 'shadow-lg');
+        const role = pill.getAttribute('data-role');
+        const data = rolesData[role];
 
-        const roleKey = pill.getAttribute('data-role');
-        const data = rolesData[roleKey];
-        if (data) {
+        // Toggle active button style
+        pills.forEach(p => {
+          p.classList.remove('bg-[#C5222F]', 'text-white', 'active', 'border-[#C5222F]', 'shadow-md');
+          p.classList.add('bg-white/5', 'text-white', 'border-white/15');
+        });
+        pill.classList.remove('bg-white/5', 'border-white/15');
+        pill.classList.add('bg-[#C5222F]', 'text-white', 'active', 'border-[#C5222F]', 'shadow-md');
+
+        // Card update with subtle animation
+        positionCard.classList.add('scale-[0.99]', 'opacity-80');
+        setTimeout(() => {
+          roleBadge.textContent = data.badge;
           roleTitle.textContent = data.title;
           roleDesc.textContent = data.desc;
           roleTrait.textContent = data.trait;
-          roleBadge.textContent = data.badge;
-        }
+          positionCard.classList.remove('scale-[0.99]', 'opacity-80');
+        }, 120);
       });
     });
 
-    // FAQ Accordion Toggle
-    const faqItems = document.querySelectorAll('#faq-accordion .faq-item');
-    faqItems.forEach(item => {
-      const trigger = item.querySelector('.faq-trigger');
-      const content = item.querySelector('.faq-content');
-      const icon = trigger.querySelector('.material-symbols-outlined');
-
-      trigger.addEventListener('click', () => {
-        const isHidden = content.classList.contains('hidden');
-        faqItems.forEach(otherItem => {
-          otherItem.querySelector('.faq-content').classList.add('hidden');
-          otherItem.querySelector('.material-symbols-outlined').style.transform = 'rotate(0deg)';
-        });
-
-        if (isHidden) {
-          content.classList.remove('hidden');
-          icon.style.transform = 'rotate(180deg)';
-        }
-      });
-    });
-
-    // Form Handling: Mailto & Clipboard Copy
+    // Form Handling
     const submitMailBtn = document.getElementById('submit-mail-btn');
     const copySummaryBtn = document.getElementById('copy-summary-btn');
     const copyBtnText = document.getElementById('copy-btn-text');
 
     function getFormData() {
-      const name = document.getElementById('user-name').value.trim() || 'Ej angivet';
-      const contact = document.getElementById('user-contact').value.trim() || 'Ej angivet';
+      const name = document.getElementById('user-name').value.trim() || 'Ej angett';
+      const contact = document.getElementById('user-contact').value.trim() || 'Ej angett';
       const commune = document.getElementById('user-commune').value;
       const category = document.getElementById('user-category').value;
-      const msg = document.getElementById('user-msg').value.trim() || 'Vill gärna komma på en provträning!';
+      const msg = document.getElementById('user-msg').value.trim() || 'Jag vill komma och prova på!';
       return { name, contact, commune, category, msg };
     }
 
     submitMailBtn.addEventListener('click', () => {
       const data = getFormData();
-      const subject = encodeURIComponent(`Intresseanmälan Dalecarlia Rebels - ${data.name}`);
+      const subject = encodeURIComponent(`Intresseanmälan - Dalecarlia Rebels - ${data.name}`);
       const body = encodeURIComponent(
-        `Hej Dalecarlia Rebels!\n\nJag vill anmäla intresse att prova på amerikansk fotboll:\n\n` +
+        `Hej Dalecarlia Rebels!\n\nJag vill anmäla mitt intresse för att prova amerikansk fotboll:\n\n` +
         `Namn: ${data.name}\n` +
-        `Kontakt: ${data.contact}\n` +
+        `Kontakt (E-post/Telefon): ${data.contact}\n` +
         `Kommun: ${data.commune}\n` +
         `Kategori: ${data.category}\n` +
         `Meddelande: ${data.msg}\n\n` +
@@ -992,7 +959,7 @@
 
     copySummaryBtn.addEventListener('click', () => {
       const data = getFormData();
-      const textToCopy = `Intresseanmälan Dalecarlia Rebels AFF:\nNamn: ${data.name}\nKontakt: ${data.contact}\nKommun: ${data.commune}\nKategori: ${data.category}\nMeddelande: ${data.msg}`;
+      const textToCopy = `Intresseanmälan - Dalecarlia Rebels AFF:\nNamn: ${data.name}\nKontakt: ${data.contact}\nKommun: ${data.commune}\nKategori: ${data.category}\nMeddelande: ${data.msg}`;
       
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(textToCopy).then(() => {
