@@ -1,9 +1,9 @@
-# Dalecarlia Rebels – svensk webbplats
+# Dalecarlia Rebels – officiell webbplats
 
-Detta är den svenska versionen av Dalecarlia Rebels webbplats.
+Detta är den officiella webbplatsen för Dalecarlia Rebels AFF (Amerikansk fotboll i Dalarna, Falun & Borlänge).
 
 - Svensk webbplats: https://dalecarliarebels.se/
-- Engelsk webbplats: https://dalecarliarebel.com/
-- Källrepository för den engelska versionen: `cjram71/dalecarliarebel`
+- Engelsk webbplats: https://dalecarliarebels.com/
+- Officiellt GitHub-repository: https://github.com/cjram71/dalecarliarebels
 
-Webbplatsen innehåller svensk text, metadata, navigering, formulärmeddelanden och tillgänglighetsinformation, samtidigt som design och funktionalitet följer den engelska versionen.
+Webbplatsen innehåller officiell klubbinformation, tränings- och matchdetaljer, ungdomsverksamhet, spelarregistrering, sponsringsinformation och tillgänglighetsanpassningar.
